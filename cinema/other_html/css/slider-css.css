@@ -1,0 +1,251 @@
+
+/* Main Slider */
+
+ 
+#home-slider .slick-dots li {
+    height: auto;
+    width: auto;
+     }
+  
+  #home-slider .slick-dots li button {
+    height: 2px;
+    width: 30px;
+    background: rgba(229, 9, 20, 0.4);
+    padding: 0;
+  }
+  
+  #home-slider .slick-dots li.slick-active button {
+    background: var(--iq-primary);
+  }
+  
+  #home-slider li { 
+    position: relative; 
+  }
+  
+  .slider-description { 
+    position: absolute; 
+    top: 15%; 
+    left: 80px; 
+  }
+  
+  #home-slider h1.slider-text { 
+    font-family: var(--font-family-third);
+    font-size: 80px;
+    margin: 15px 0; 
+    font-weight: 900;
+  }
+  
+  #home-slider p { 
+    margin: 20px 0; 
+    width: 600px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  #home-slider .slick-bg {
+    padding: 100px 0 50px;
+    width:100%;
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    position: relative; 
+    z-index: 1;
+  }
+  
+  #home-slider .slick-bg.s-bg-1 {
+    background-image: url(https://res.allmacwallpaper.com/get/Retina-MacBook-Air-13-inch-wallpapers/5k-spider-man-far-from-home-2560x1600/22652-11.jpg);
+  }
+  
+  #home-slider .slick-bg.s-bg-2 {
+    background-image: url(https://irs.www.warnerbros.com/hero-banner-v2-tablet-jpeg/movies/media/browser/space_jam_a_new_legacy_throw_4320x1080.jpg);
+  }
+  
+  #home-slider .slick-bg.s-bg-3 {
+    background-image: url(https://i.ytimg.com/vi/amPFMz5aBsA/maxresdefault.jpg); 
+  }
+  
+  .trailor-video { 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    z-index: 999;
+    text-align: center; 
+  }
+  
+  .channel-name { 
+    color: var(--iq-primary); 
+    font-size: 20px; 
+    margin-left: 10px; 
+    letter-spacing: 2.5px; 
+    font-weight: 500; 
+  }
+  
+  .c-logo { 
+    width: 130px; 
+  }
+  
+  .channel-logo { 
+    border-left: 5px solid var(--iq-primary); 
+    background: transparent linear-gradient(270deg, rgba(11, 1, 2, 0) 0%, rgba(255, 55, 65, 0.3) 100%); 
+    padding: 10px 10px 10px 15px;
+    width: 255px; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .circle { 
+    stroke: var(--iq-primary);
+    stroke-dasharray: 650; 
+    stroke-dashoffset: 650; 
+    transition: all 0.5s ease-in-out; opacity: 0.3; 
+  }
+  
+  .playbtn { 
+    display: inline-block; 
+    transition: all 0.5s ease; 
+  }
+  
+  .playbtn .triangle { 
+    transition: all 0.7s ease-in-out; 
+    stroke-dasharray: 240; 
+    stroke-dashoffset: 480; 
+    stroke: var(--iq-white); 
+    transform: translateY(0); 
+  }
+  
+  .playbtn:hover .triangle { 
+    stroke-dashoffset: 0; 
+    opacity: 1; 
+    stroke: var(--iq-primary); 
+    animation: trailorPlay 0.7s ease-in-out; 
+  }
+  
+  .playbtn:hover .circle { 
+    stroke-dashoffset: 0; 
+    opacity: 1; 
+  }
+  
+  .w-trailor { 
+    font-size: 17px; 
+    letter-spacing: 3.5px; 
+    font-weight: 600; 
+    color: var(--iq-white); 
+    margin-left: 5px; 
+  }
+  
+  .slider-inner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .big-title { 
+    background: url('../images/texure.jpg'); 
+    background-repeat: repeat-x; 
+    background-position: 100% 100%; 
+    color: transparent; 
+    -webkit-font-smoothing: antialiased; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  .slick-track {
+    margin:unset!important;
+  }
+  
+  /* edited footer start */
+  
+  
+  #home-slider .trending-list {
+    margin: 0 0 30px 0;
+  }
+  
+  .slider-ratting ul li {
+    margin-right: 5px;
+  }
+  
+  .iq-button.btn {
+      padding: 7px 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+  }
+  
+  .block-images .hover-buttons {
+    margin-top: 5px; 
+  }
+  
+  .block-social-info .music-play-lists li {
+    width:40px;
+    height:40px;
+  }
+  
+  .block-social-info .music-play-lists span {
+    width:30px;
+    height:30px;
+  }
+  
+  .block-social-info .music-play-lists span i {
+    font-size: 15px;
+  }
+  
+  /*---------------------*/
+  
+  .p-btns {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .trending-info .text-detail .badge {
+    font-size: 20px;
+  }
+  
+  .badge.badge-trend {
+    background: rgb(0, 0, 0, 0.42); 
+  }
+  
+  .overview-tab:before, .slick-bg:before {
+    content: '';
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 90%; 
+    height: 100%; 
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(36, 36, 36, 1) 35%, rgba(83, 100, 141, 0) 100%); 
+    z-index: 1; 
+  }
+  
+  .slick-bg:before { 
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 1) 35%, rgba(83, 100, 141, 0) 100%); 
+    width: 100%; 
+    z-index: -1; 
+  }
+  
+  .trending-list .title { 
+    font-size: 18px;
+    font-weight: 500; 
+  }
+  
+  .trending-list .title span {
+    font-size: 16px; 
+    font-weight: 400; 
+  }
+  
+  
+  #trending-slider-nav .slick-current.slick-active {
+      transform: scale3d(1.3, 1.3, 1) translate3d(0, 0, 0) perspective(500px);
+      transform-origin: 50% 50%;
+      transition: all 0.6s ease 0s;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* .parallax-img img { box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6); }
+  .parallax-window { height: 100%; padding: 100px 0; position: relative; background: url(../images/parallax/p1.jpg)center center; background-size: cover; background-attachment: fixed; }
+  .parallax-window::after { position: absolute; content: ""; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.8); }
+  .parallaxt-details { z-index: 9; position: relative; } */
+  
+  /*Animation*/

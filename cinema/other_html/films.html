@@ -1,0 +1,3245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name='freelancehunt' content='36e737edd868376'>
+   <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="shortcut icon" type="img/png" href="img/faviconn.png" />
+   <link rel="stylesheet" href="css/typography.css" />
+   <link rel="stylesheet" href="css/slider-css.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+   <link rel="stylesheet" href="css/cdn-video.css" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Enigma Cinema - Films</title>
+</head>
+<body>
+  <!-- loader -->
+	<div class="mask">
+		<div id="preloader">
+			<div class="center-loader">
+	<svg class="gegga">
+		<defs>
+			<filter id="gegga">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="inreGegga"></feColorMatrix>
+				<feComposite in="SourceGraphic" in2="inreGegga" operator="atop"></feComposite>
+			</filter>
+		</defs>
+	</svg>
+	<svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+		<defs>
+			<linearGradient id="linjärGradient">
+				<stop class="stopp1" offset="0"></stop>
+				<stop class="stopp2" offset="1"></stop>
+			</linearGradient>
+			<linearGradient y2="160" x2="160" y1="40" x1="40" gradientUnits="userSpaceOnUse" id="gradient" xlink:href="#linjärGradient"></linearGradient>
+		</defs>
+		<path class="halvan" d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"></path>
+		<circle class="strecken" cx="100" cy="100" r="64"></circle>
+	</svg>
+	<svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+		<path class="halvan" d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"></path>
+		<circle class="strecken" cx="100" cy="100" r="64"></circle>
+	</svg>
+
+</div>
+</div>
+</div>
+
+
+<header>
+  <!-- hamburger -->
+<input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+<label for="main-navigation-toggle">
+  <span></span>
+</label>
+
+<!-- menu hamburger -->
+<nav id="main-navigation" class="nav-main">
+  <ul class="menu">
+    <li class="menu__item">
+      <a class="menu__link lang-change" href="../index.html" caption='home'>Home</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link lang-change" href="" caption='film'>Films</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link lang-change" href="#" caption='Cart'>Cartoons</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link lang-change" href="#" caption='Anim'>Anime</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link lang-change" href="#" caption='Seria'>Serials</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- logo menu -->
+<div class="logo"> 
+  <a href="../index.html" class="logo-link"><img src="images/logo.png" alt="" class="c-logo" data-animation-in="fadeInLeft" data-delay-in="0.5"></a>
+</div>
+<!-- language -->
+<div class="language_all">
+  <li class="language__item">
+    <a class="menu_link language_text" href="#">language</a>
+    <ul class="sublang">
+      <li class="language__item language_link">
+        <a class="menu_link ukr" href="#"><img src="img/uk.png" alt="" class="ukraine all-language-img">Ukrainian</a>
+      </li>
+      <li class="language__item language_link">
+        <a class="menu_link eng" href="#"><img src="img/eng.png" alt="" class="english all-language-img">English</a>
+      </li>
+      <li class="language__item language_link">
+        <a class="menu_link pol" href="#"><img src="img/pl.png" alt="" class="polish all-language-img">Polish</a>
+      </li>
+    </ul>
+  </li>
+  </div>
+
+  
+  <div class="favorite_film">
+    <a href="#" class="toggleMenu heart-fav fav_btn"><i class="fa fa-heart"></i></a>
+    </div>
+</header>
+<!-- content -->
+
+
+   <section id="home" class="iq-main-slider p-0">
+
+      <div id="home-slider" class="slider m-0 p-0">
+    
+         <div class="slide slick-bg s-bg-1">
+    
+            <div class="container-fluid position-relative h-100">
+    
+               <div class="slider-inner h-100">
+    
+                  <div class="row align-items-center  h-100">
+    
+                     <div class="col-xl-6 col-lg-12 col-md-12">
+    
+                        <a href="javascript:void(0);">
+    
+                           <div class="channel-logo" data-animation-in="fadeInLeft" data-delay-in="0.5">
+    
+                              <img src="images/logo.png" class="c-logo" alt="streamit">
+    
+                           </div>
+                        </a>
+                        
+                        <h1 class="slider-text big-title title text-uppercase lang-change" data-animation-in="fadeInLeft"
+                           data-delay-in="0.6" caption='Spider'>Spider-Man: No Way Home</h1>
+    
+                           <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                             <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                                 <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                                    <li>
+                                       <i class="fa fa-star" aria-hidden="true"></i>
+                                 </li>
+                                       <li>
+                                       <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                          <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          </li>
+                                             <li>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                             </li>
+                                                   <li>
+                                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                                   </li>
+                                                   <li>
+                                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                      <li>
+                                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </li>
+                                                         <li>
+                                                         <i class="fa fa-star" aria-hidden="true"></i>
+                                                         </li>
+                                                            <li class="non-star">
+                                                               <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </li>
+                                                                  <li class="non-star">
+                                                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                                                  </li>
+                                 </ul>
+                                 <span class="text-white ml-2">8.3(Imdb)</span>
+                                 </div>
+                                 <div class="d-flex align-items-center mt-2 mt-md-3">
+                                    <span class="badge badge-secondary p-2" style="margin-left: 7px;">12+</span>
+                                    <span class="ml-3" style="margin-left: 10px;" >2h 28m</span>
+                                 </div>
+                         </div>
+    
+                        <p data-animation-in="fadeInUp" data-delay-in="1.2" class="lang-change" caption="opisspide">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.
+                        </p>
+                        <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                           <div class="text-primary title starring">
+                              <b class="lang-change" caption='Star'>Starring:</b><span class="text-body lang-change" caption="Starsman">Tom Hardy, Woody Harrelson, Michelle Williams.</span>
+                           </div>
+                           <div class="text-primary title genres">
+                              <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body lang-change" caption="genreman">Action, Adventure, Fantasy.</span>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                           <a href="#" class="btn btn-hover iq-button"><i class="fa fa-play mr-2"
+                              aria-hidden="true"></i>Watch Now</a>
+                           <a href="#films-pg" class="btn btn-link"><div class="scrolldown" style="--color: skyblue">
+                              <div class="chevrons">
+                                  <div class="chevrondown"></div>
+                                  <div class="chevrondown"></div>
+                              </div>
+                          </div></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+                     <a href="video/trailer.mp4" class="video-open playbtn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                           x="0px" y="0px" width="80px" height="80px" viewBox="0 0 213.7 213.7"
+                           enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+                           <polygon class='triangle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"
+                              points="73.5,62.5 148.5,105.8 73.5,149.1 " />
+                           <circle class='circle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+                        </svg>
+                        <span class="w-trailor lang-change" caption='trillwtch'>Watch Trailer</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide slick-bg s-bg-2">
+            <div class="container-fluid position-relative h-100">
+               <div class="slider-inner h-100">
+                  <div class="row align-items-center  h-100">
+                     <div class="col-xl-6 col-lg-12 col-md-12">
+                        <a href="javascript:void(0);">
+                           <div class="channel-logo" data-animation-in="fadeInLeft">
+                              <img src="images/logo.png" class="c-logo" alt="streamit">
+                           </div>
+                        </a>
+                        <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">Avengers Endgame</h1>
+                        
+                        <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                             <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                                 <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                                 </li>
+                                    <li>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                             <li>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                             </li>
+                                             <li>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                          </li>
+                                                <li>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                   <li>
+                                                   <i class="fa fa-star" aria-hidden="true"></i>
+                                                   </li>
+                                                      <li class="non-star">
+                                                         <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </li>
+                                                            <li class="non-star">
+                                                               <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </li>
+                                                                                 </ul>
+                             <span class="text-white ml-2">8.4(Imdb)</span>
+                             </div>
+                                                         <div class="d-flex align-items-center mt-2 mt-md-3">
+                             <span class="badge badge-secondary p-2" style="margin-left: 7px;">16+</span>
+                             <span class="ml-3" style="margin-left: 10px;" >3h 1m</span>
+                         </div>
+                     </div>
+                        <p data-animation-in="fadeInUp" data-delay-in="0.7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                           dummy text ever since the 1500s.
+                        </p>
+                        <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Tom Hardy, Woody Harrelson, Michelle Williams</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+      </div>
+         
+                        <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1">
+                           <a href="#" class="btn btn-hover iq-button avg-film-btn-show"><i class="fa fa-play mr-2"
+                              aria-hidden="true"></i>Watch Now</a>
+                           <a href="#films-pg" class="btn btn-link"><div class="scrolldown" style="--color: skyblue">
+                              <div class="chevrons">
+                                  <div class="chevrondown"></div>
+                                  <div class="chevrondown"></div>
+                              </div>
+                          </div></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+                     <a href="video/trailer.mp4" class="video-open playbtn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                           x="0px" y="0px" width="80px" height="80px" viewBox="0 0 213.7 213.7"
+                           enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+                           <polygon class='triangle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"
+                              points="73.5,62.5 148.5,105.8 73.5,149.1 " />
+                           <circle class='circle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+                        </svg>
+                        <span class="w-trailor lang-change" caption='trillwtch'>Watch Trailer</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slide slick-bg s-bg-3">
+            <div class="container-fluid position-relative h-100">
+               <div class="slider-inner h-100">
+                  <div class="row align-items-center  h-100">
+                     <div class="col-xl-6 col-lg-12 col-md-12">
+                        <a href="javascript:void(0);">
+                           <div class="channel-logo" data-animation-in="fadeInLeft">
+                              <img src="images/logo.png" class="c-logo" alt="streamit">
+                           </div>
+                        </a>
+                        <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">Thor: Love And Thunder</h1>
+                        
+                        <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                        <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                           <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li class="non-star">
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li class="non-star">
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li class="non-star">
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              <li class="non-star">
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </li>
+                              </ul>
+    
+                            <span class="text-white ml-2">6.4(static)</span>
+                          </div>
+    
+                              <div class="d-flex align-items-center mt-2 mt-md-3">
+                             <span class="badge badge-secondary p-2" style="margin-left: 7px;">16+</span>
+                             <span class="ml-3" style="margin-left: 10px;">3h</span>
+                         </div>
+                     </div>
+    
+                        
+                        <p data-animation-in="fadeInUp" data-delay-in="1.2" class="fadeInUp animated" style="opacity: 1; animation-delay: 1.2s;">Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.
+                        </p>
+                        <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                           <div class="text-primary title starring">
+                              <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Chris Hemsworth, Natalie Portman, Christian Bale</span>
+                           </div>
+                           <div class="text-primary title genres">
+                              <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Comedy, Action, Advanture</span>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1">
+                           <a href="#" class="btn btn-hover iq-button tor-tit-btn"><i class="fa fa-play mr-2"
+                              aria-hidden="true"></i>Watch Now</a>
+    
+                           <a href="#films-pg" class="btn btn-link"><div class="scrolldown" style="--color: skyblue">
+                              <div class="chevrons">
+                                  <div class="chevrondown"></div>
+                                  <div class="chevrondown"></div>
+                              </div>
+                          </div></a>
+                        </div>
+                        
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+                     <a href="#" class="video-open playbtn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                           x="0px" y="0px" width="80px" height="80px" viewBox="0 0 213.7 213.7"
+                           enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+                           <polygon class='triangle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10"
+                              points="73.5,62.5 148.5,105.8 73.5,149.1 " />
+                           <circle class='circle' fill="none" stroke-width="7" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+                        </svg>
+                        <span class="w-trailor lang-change" caption='trillwtch'>Watch Trailer</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle"
+            fill="none" stroke="currentColor">
+            <circle r="20" cy="22" cx="22" id="test"></circle>
+         </symbol>
+      </svg>
+    </section>
+
+  <!-- menu fav  -->
+  <div class="menu_liked"></div>
+  
+   <!-- Overlay Layer  -->
+    <div class="overlay"></div>
+    
+  </div>
+
+   
+  <div class="after_header" id="films-pg">
+    <!-- Photos Conatiner  -->
+<div class="all-section-of-bstf">
+<div class="hero-center-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-5 col-md-5 col-xl-4 align-self-center">
+						<div class="img-wrap">
+							<img src="images/film2.jpg" alt="" draggable="false">
+						</div>
+					</div>
+					<div class="col-12 col-sm-7 col-md-7 col-lg-5 col-xl-4 pl-4 align-self-center mt-4 mt-sm-0 text-center text-sm-left">
+						<h3 class="mb-1 tit-best">Brian and Charles</h3>
+						<p class="small mb-2 opacity-60">1h 30m | Comedy <span class="new-2022">2022</span> </p>
+						<p class="mb-0">
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="ml-1 ml-sm-3 size-18 color-purple">6.6/10</span>
+						</p>
+						<p class="mt-2 mb-1 d-none d-sm-block">After a particularly harsh winter Brian goes into a deep depression; completely isolated and with no one to talk to, Brian does what any sane person would do when faced with such a melancholic situation. He builds a robot.</p>
+                  <div class="all-btn-pos-fav-f">
+                     <button class="btn-of-best first-best-b"><i class="fa fa-play mr-2" aria-hidden="true"></i> Watch</button>
+                  </div>
+               </div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-center-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-5 col-md-5 col-xl-4 align-self-center">
+						<div class="img-wrap">
+							<img src="images/film 3.jpg" alt="" draggable="false">
+						</div>
+					</div>
+					<div class="col-12 col-sm-7 col-md-7 col-lg-5 col-xl-4 pl-4 align-self-center mt-4 mt-sm-0 text-center text-sm-left">
+						<h3 class="mb-1 tit-best">Top Gun: Maverick</h3>
+						<p class="small mb-2 opacity-60">2h 10m | Action, Drama <span class="new-2022">2022</span> </p>
+						<p class="mb-0">
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="ml-1 ml-sm-3 size-18 color-purple">8.4/10</span>
+						</p>
+						<p class="mt-2 mb-1 d-none d-sm-block">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.</p>
+                  <div class="all-btn-pos-fav-f">
+                     <button class="btn-of-best second-best-b"><i class="fa fa-play mr-2" aria-hidden="true"></i> Watch</button>
+                  </div>
+               </div>
+				</div>
+			</div>
+
+		</div>
+		<div class="hero-center-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-5 col-md-5 col-xl-4 align-self-center">
+						<div class="img-wrap">
+							<img src="images/film 4.jpg" alt="" draggable="false">
+						</div>
+					</div>
+					<div class="col-12 col-sm-7 col-md-7 col-lg-5 col-xl-4 pl-4 align-self-center mt-4 mt-sm-0 text-center text-sm-left">
+						<h3 class="mb-1 tit-best">Good Boss</h3>
+						<p class="small mb-2 opacity-60"> 2h | Drama, Comedy <span class="new-2021">2021</span> </p>
+						<p class="mb-0">
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="ml-1 ml-sm-3 size-18 color-purple">7.2/10</span>
+						</p>
+						<p class="mt-2 mb-1 d-none d-sm-block">Awaiting a visit by a committee that could give his company an award for excellence, the owner of an industrial scales manufacturing business tries to resolve any problems from his workers in enough time.</p>
+                  <div class="all-btn-pos-fav-f">
+                     <button class="btn-of-best third-best-b"><i class="fa fa-play mr-2" aria-hidden="true"></i> Watch</button>
+                  </div>
+               </div>
+				</div>
+			</div>
+
+		</div>
+		<div class="hero-center-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-5 col-md-5 col-xl-4 align-self-center">
+						<div class="img-wrap">
+							<img src="images/film 5.jpg" alt="" draggable="false">
+						</div>
+					</div>
+					<div class="col-12 col-sm-7 col-md-7 col-lg-5 col-xl-4 pl-4 align-self-center mt-4 mt-sm-0 text-center text-sm-left">
+						<h3 class="mb-1 tit-best">Dinner in America</h3>
+						<p class="small mb-2 opacity-60">1h 46m | Comedy, Music, Drama <span class="new-2020">2020</span> </p>
+						<p class="mb-0">
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="color-purple opacity-40"><i class='uil uil-star'></i></span>
+							<span class="ml-1 ml-sm-3 size-18 color-purple">7.3/10</span>
+						</p>
+						<p class="mt-2 mb-1 d-none d-sm-block">An on-the-lam punk rocker and a young woman obsessed with his band unexpectedly fall in love and go on an epic journey together through America's decaying Midwestern suburbs.</p>
+                  <div class="all-btn-pos-fav-f">
+                     <button class="btn-of-best fours-best-b"><i class="fa fa-play mr-2" aria-hidden="true"></i> Watch</button>
+                  </div>
+               </div>
+				</div>
+			</div>
+
+		</div>
+		<div class="hero-left-section">
+			<ul class="slide-buttons">
+				<li class="hover-target">
+				</li>
+				<li class="hover-target">
+				</li>
+				<li class="hover-target">
+				</li>
+				<li class="hover-target">
+				</li>
+			</ul>
+		</div>
+	</div>								
+	</div>
+
+   <!-- frames -->
+
+   <div class="first-vid-contt">
+      <div class="close_f_vid">
+         <button class="back-go-btn-f">
+            <svg width="60" height="40">
+               <path stroke="white" stroke-width="2" stroke-linecap="round" fill="none" d="M18,20 l8,-8 M18,20 h22 M18,20 l8,8" />
+            </svg>
+         </button>
+      </div>
+      <div class="pos-of-first-vid">
+
+<!-- Brian and Charles -->
+
+   <div id="container_of_vid-fist">
+      <iframe src="https://abraham-erskine.as.alloeclub.com/?token_movie=c995256c398874c2c2fdc6ff6dcca3" frameborder="0" allowfullscreen="" class="Brian-f"></iframe>
+   </div>
+      <!-- title-f -->
+      <div class="xsxsfasf Brian-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Brian and Charles</h1>
+
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+              <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+
+                  </ul>
+                  <span class="text-white ml-2">6.6(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">10+</span>
+                  </div>
+         </div>
+                     <div class="atention-of-f">
+               <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+      if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+</div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After a particularly harsh winter Brian goes into a deep depression; completely isolated and with no one to talk to, Brian does what any sane person would do when faced with such a melancholic situation. He builds a robot.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">David Earl, Chris Hayward, Louise Brealey</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Comedy</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Comedy</span>
+         </div>
+      </div>
+      </div>
+
+
+<!-- Top Gun: Maverick -->
+      <div id="container_of_vid-fist">
+         <iframe src="https://aboulia.thealloha.club/?kp=572032" frameborder="0" allowfullscreen="" class="Maverick-f"></iframe>
+      </div>
+         <!-- title-f -->
+         <div class="xsxsfasf Maverick-t">
+            <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+               data-delay-in="0.6">Top Gun: Maverick</h1>
+   
+               <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                 <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                     <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+   
+                     </ul>
+                     <span class="text-white ml-2">8.4(lmdb)</span>
+                     </div>
+                     <div class="d-flex align-items-center mt-2 mt-md-3">
+                        <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">16+</span>
+                     </div>
+            </div>
+                        <div class="atention-of-f">
+                  <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+         if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+   </div>
+            <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.
+            </p>
+            <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+            <div class="text-primary title starring">
+               <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Tom Cruise, Jennifer Connelly, Miles Teller</span>
+            </div>
+            <div class="text-primary title genres">
+               <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+            </div>
+            <div class="text-primary title tag">
+               <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Drama, Action</span>
+            </div>
+         </div>
+         </div>
+
+
+<!-- THE GOOD BOSS -->
+
+<div id="container_of_vid-fist">
+   <iframe src="https://assembly.allohalive.com/?token_movie=494c21c460a1a75b05ccb6f2e1ff57" frameborder="0" allowfullscreen="" class="Boss-f"></iframe>
+</div>
+   <!-- title-f -->
+   <div class="xsxsfasf Boss-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Good Boss</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star"> 
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+
+               </ul>
+               <span class="text-white ml-2">7.2(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+                  <div class="atention-of-f">
+            <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+   if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+</div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Awaiting a visit by a committee that could give his company an award for excellence, the owner of an industrial scales manufacturing business tries to resolve any problems from his workers in enough time.
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Javier Bardem, Manolo Solo, Almudena Amor</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Drama, Comedy</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Comedy, Drama</span>
+      </div>
+   </div>
+   </div>
+
+
+
+
+
+<!-- Dinner in America -->
+
+<div id="container_of_vid-fist">
+   <iframe src="https://assembly.allohalive.com/?token_movie=494c21c460a1a75b05ccb6f2e1ff57" frameborder="0" allowfullscreen="" class="Dinner-f"></iframe>
+</div>
+   <!-- title-f -->
+   <div class="xsxsfasf Dinner-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Dinner in America</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star"> 
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+
+               </ul>
+               <span class="text-white ml-2">7.3(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+                  <div class="atention-of-f">
+            <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+   if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+</div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">An on-the-lam punk rocker and a young woman obsessed with his band unexpectedly fall in love and go on an epic journey together through America's decaying Midwestern suburbs.
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Kyle Gallner, Yancey Fuqua, Jennifer Kincer</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Drama, Comedy</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Comedy, Music, Drama</span>
+      </div>
+   </div>
+   </div>
+   <!-- end films -->
+
+      </div>
+      </div>
+
+
+    <!-- end -->
+<div class="all_search">
+  <form class="search">
+    <input type="text" placeholder="search film" class="search_input" id="searchbox" onkeyup="search()">
+    <button type="button" class="search_btn">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+  </div>
+  
+        <div class="Category">
+
+         <div class="btns-container-cat">
+
+      
+            <button class="cta All-f">
+               <span class="hover-underline-animation"> All </span>
+           </button>
+
+           <button class="cta Action-f">
+            <span class="hover-underline-animation"> Action </span>
+        </button>
+
+        <button class="cta Fantasy-f">
+         <span class="hover-underline-animation"> Fantasy </span>
+     </button>
+
+     <button class="cta Horror-f">
+      <span class="hover-underline-animation"> Horror </span>
+  </button>
+
+  <button class="cta Comedy-f">
+   <span class="hover-underline-animation"> Comedy </span>
+</button>
+
+<button class="cta Drama-f">
+   <span class="hover-underline-animation"> Drama </span>
+</button>
+
+<button class="cta Documentary-f">
+   <span class="hover-underline-animation"> Documentary </span>
+</button>	
+         </div>
+        </div>
+                        <!-- switcher -->
+                        <div class="pos-of-switcg">
+                           <div class="switch">
+                              <div class="circlle hover-target"></div>
+                           </div>	
+                        </div>
+
+
+   <div class="container_of_photo">
+
+   <div class="photo_container" id="film-list"></div>
+
+      </div> 
+   </div>
+</div>
+
+
+<div class="videos">
+   <div class="first-vid-cont">
+      <div class="close_f_vid">
+         <button class="back-go-btn-f">
+            <svg width="60" height="40">
+               <path stroke="white" stroke-width="2" stroke-linecap="round" fill="none" d="M18,20 l8,-8 M18,20 h22 M18,20 l8,8" />
+            </svg>
+          </button>
+      </div>
+      <div class="pos-of-first-vid">
+
+         <!-- warning -->
+         <div id="container_of_vid-fist">
+            <iframe src="https://thermal.allohalive.com/?token_movie=da33bec8b3405d09aea99834807694" frameborder="0" allowfullscreen="" class="warning-f"></iframe>
+         </div>
+          <!-- title-f -->
+         <div class="xsxsfasf warning-t">
+            <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+               data-delay-in="0.6">Warning</h1>
+   
+               <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                 <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                     <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                     </ul>
+                     <span class="text-white ml-2">4.6(lmdb)</span>
+                     </div>
+                     <div class="d-flex align-items-center mt-2 mt-md-3">
+                        <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+                     </div>
+                  </div>
+                           <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+            <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Set in the not too distant future, this intense sci-fi thriller explores the repercussions that mankind faces when their omniscient technology becomes a substitute for human contact. But life begin to unravel when a global storm causes electronics to go haywire, leading to terrifying, deadly consequences.
+            </p>
+            <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+             <div class="text-primary title starring">
+               <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Thomas Jane, Tomasz Kot, Toni Garrn</span>
+             </div>
+             <div class="text-primary title genres">
+               <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Fantasy</span>
+             </div>
+             <div class="text-primary title tag">
+                 <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Fantasy,Thriller</span>
+             </div>
+         </div>
+         </div>
+  
+
+<!-- vesper -->
+               <div id="container_of_vid-fist">
+            <iframe src="https://thermal.allohalive.com/?token_movie=602e333ea16f966cb9c86b17faa9fe" frameborder="0" allowfullscreen="" class="vesper-f"></iframe>
+         </div>
+            <!-- title-f -->
+            <div class="xsxsfasf vesper-t">
+               <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6">Vesper</h1>
+      
+                  <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                    <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                        <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li class="non-star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li class="non-star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li class="non-star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+                           <li class="non-star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                           </li>
+
+                        </ul>
+                        <span class="text-white ml-2">6.1(lmdb)</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2 mt-md-3">
+                           <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">13+</span>
+                        </div>
+               </div>
+                           <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+               <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After the collapse of Earth's ecosystem, Vesper, a 13-year-old girl struggling to survive with her paralyzed father, meets a woman with a secret who will force her to use her wits, strengths and bio-hacking abilities to fight for the possibility of having a future.
+               </p>
+               <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+               <div class="text-primary title starring">
+                  <b class="lang-change" caption='Star'>Starring:</b><span class="text-body">Raffiella Chapman, Eddie Marsan, Rosy McEwen</span>
+               </div>
+               <div class="text-primary title genres">
+                  <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Drama</span>
+               </div>
+               <div class="text-primary title tag">
+                  <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Sci-Fi, Adventure, Drama</span>
+               </div>
+            </div>
+            </div>
+
+            <!-- Prey -->
+            <div id="container_of_vid-fist">
+               <iframe src="https://thermal.allohalive.com/?token_movie=fa260d20dc77922409b49fc07e670d" frameborder="0" allowfullscreen="" class="prey-f"></iframe>
+            </div>
+         <!-- title-f -->
+         <div class="xsxsfasf prey-t">
+            <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+               data-delay-in="0.6">Prey</h1>
+      
+               <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                 <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                     <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                        <li class="non-star">
+                           <i class="fa fa-star" aria-hidden="true"></i>
+                        </li>
+                     </ul>
+                     <span class="text-white ml-2">7.2(lmdb)</span>
+                     </div>
+                     <div class="d-flex align-items-center mt-2 mt-md-3">
+                        <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">17+</span>
+                     </div>
+            </div>
+                              <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+            <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">A skilled Comanche warrior protects her tribe from a highly evolved alien predator that hunts humans for sport, fighting against wilderness, dangerous colonisers and this mysterious creature to keep her people safe.
+            </p>
+            <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+            <div class="text-primary title starring">
+               <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Amber Midthunder, Dakota Beavers, Dane DiLiegro</span>
+            </div>
+            <div class="text-primary title genres">
+               <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Drama</span>
+            </div>
+            <div class="text-primary title tag">
+               <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Drama, Advanture</span>
+            </div>
+         </div>
+         </div>
+
+
+            <!-- Contractor (2022) -->
+
+            <div id="container_of_vid-fist">
+               <iframe src="https://abelite.thealloha.club/?token_movie=bf9256f86e1a4d73a7d7954f13d11c" frameborder="0" allowfullscreen="" class="contractor-f"></iframe>
+               </div>
+     <!-- title-f -->
+     <div class="xsxsfasf contractor-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Contractor</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+           <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+                              <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller</span>
+      </div>
+   </div>
+</div>
+
+               <!-- Black X Widow (2022) -->
+
+               <div id="container_of_vid-fist">
+                  <iframe src="https://they.allohalive.com/?token_movie=a98036e4b94095334e4262c66f53ed" frameborder="0" allowfullscreen="" class="black-f"></iframe>
+                  </div>
+      <!-- title-f -->
+      <div class="xsxsfasf black-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Black X Widow</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">6.7(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">13+</span>
+                  </div>
+         </div>
+                                 <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">In Marvel Studios' action-packed spy thriller "Black Widow," Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Scarlett Johansson, Florence Pugh, David Harbour</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Advanture, Action, Sci-Fi</span>
+         </div>
+      </div>
+</div>
+
+               <!-- The Requin -->
+
+               <div id="container_of_vid-fist">
+                  <iframe src="https://abraham-erskine.as.alloeclub.com/?token_movie=8bbe6916cf9fcef2a042e7ab9818b6&token=2873e0a9e90811171f7042a748eabe" frameborder="0" allowfullscreen="" class="requin-f"></iframe>
+                  </div>
+      <!-- title-f -->
+      <div class="xsxsfasf requin-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">The Requin</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">2.6(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+                  </div>
+               </div>
+                                 <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">A couple on a romantic getaway find themselves stranded at sea when a tropical storm sweeps away their villa. In order to survive, they are forced to fight the elements, while sharks circle below.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Thomas Jane, Tomasz Kot, Toni Garrn</span>
+          </div>
+          <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Thriller, Horror</span>
+         </div>
+      </div>
+</div>
+
+
+<!-- The Thor -->
+
+               <div id="container_of_vid-fist">
+                  <iframe src="https://abelian.thealloha.club/?kp=1282688" frameborder="0" allowfullscreen="" class="thor-f"></iframe>
+                  </div>
+      <!-- title-f -->
+      <div class="xsxsfasf thor-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Thor 4</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">6.4(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">13+</span>
+                  </div>
+         </div>
+                                 <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Hemsworth, Natalie Portman, Christian Bale</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Comedy, Action, Advanture</span>
+         </div>
+      </div>
+</div>
+
+<!-- Шан-Чи (2021) -->
+
+               <div id="container_of_vid-fist">
+                  <iframe src="https://ability.thealloha.club/?token_movie=2061083ecf7b20936326d81538756e&token=c24a817102def48903e54293eadad2" frameborder="0" allowfullscreen="" class="shan-f"></iframe>
+                  </div>
+      <!-- title-f -->
+      <div class="xsxsfasf shan-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Шан-Чи</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">7.4(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">12+</span>
+                  </div>
+         </div>
+                                 <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Many years ago, the ambitious warrior Xu Wenyu took possession of a magical martial artifact - ten rings, with which he defeated all enemies and created a secret organization. For centuries, he gathered an army and secretly intervened in the course of world history, but in 1996 he met a beautiful girl, a master of martial arts, hidden from prying eyes in the village of Ta Lo, gradually finished and started a family.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Simu Liu, Awkwafina, Tony Chiu-Wai Leung</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body lang-change" caption='genreman'>Fantasy, Action, Advanture</span>
+         </div>
+      </div>
+</div>
+
+<!-- Triumph (2021) -->
+
+<div id="container_of_vid-fist">
+   <iframe src="https://best.allohalive.com/?kp=909626" frameborder="0" allowfullscreen="" class="tri-f"></iframe>
+   </div>
+<!-- title-f -->
+<div class="xsxsfasf tri-t">
+<h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+data-delay-in="0.6">Triumph</h1>
+
+<div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">5.7(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">13+</span>
+                  </div>
+         </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">A determined high-school senior strives to be a wrestler one last time despite having cerebral palsy and goes to extreme lengths, crushing obstacles and inspiring others along his journey to prove his abilities. Inspired by real events.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">RJ Mitte, Johnathon Schaech, Colton Haynes</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Drama</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Drama</span>
+         </div>
+</div>
+</div>
+
+<!-- Hocus Pocus 2 -->
+
+               <div id="container_of_vid-fist">
+                  <iframe src="https://aboulia.thealloha.club/?kp=1367685&token=b8823fb7495df944e5944fb56c6778с" frameborder="0" allowfullscreen="" class="hoc-f"></iframe>
+               </div>
+      <!-- title-f -->
+      <div class="xsxsfasf hoc-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Hocus Pocus 2</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">6.1(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">10+</span>
+                  </div>
+         </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">It's been 29 years since someone lit the Black Flame Candle and resurrected the 17th-century Sanderson sisters, and they are looking for revenge. Now it is up to three high-school students to stop the ravenous witches from wreaking a new kind of havoc on Salem before dawn on All Hallow's Eve.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Bette Midler, Sarah Jessica Parker, Kathy Najimy</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Fantasy</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Fantasy, Comedy, Family</span>
+         </div>
+      </div>
+</div>
+
+
+
+<!-- TakeDown 2 -->
+
+<div id="container_of_vid-fist">
+   <iframe src="https://ollo.as.alloeclub.com/?token_movie=6afd6acd9cd2e400a0401d9532eeef" frameborder="0" allowfullscreen="" class="take-f"></iframe>
+</div>
+<!-- title-f -->
+<div class="xsxsfasf take-t">
+<h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+data-delay-in="0.6">The Takedown</h1>
+
+<div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+<div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+   <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li>
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star-half" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+      </li>
+      <li class="non-star">
+         <i class="fa fa-star-half" aria-hidden="true"></i>
+      </li>
+   </ul>
+   <span class="text-white ml-2">5.7(lmdb)</span>
+   </div>
+   <div class="d-flex align-items-center mt-2 mt-md-3">
+      <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+   </div>
+</div>
+                  <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+<p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Ousmane and François are two cops with very different styles. The unlikely pair are reunited once again for a new investigation. What seemed to be a simple drug deal turns out to be a high-scale criminal case wrapped in danger.
+</p>
+<div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+<div class="text-primary title starring">
+   <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Omar Sy, Laurent Lafitte, Izïa Higelin</span>
+</div>
+<div class="text-primary title genres">
+   <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Comedy</span>
+</div>
+<div class="text-primary title tag">
+<b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Crime, Comedy, Action</span>
+</div>
+</div>
+</div>
+
+
+<!-- Venom 2: Carnage (2021) -->
+
+               <div id="container_of_vid-fist">
+                 
+                  <iframe  frameborder="0" class="veno-f" src="https://ability.thealloha.club/?token_movie=68c677ebf36027b452b704126b17e7" allowfullscreen=""></iframe>
+               </div>
+      <!-- title-f -->
+      <div class="xsxsfasf veno-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Venom 2</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">5.9(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">12+</span>
+                  </div>
+         </div>
+            <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Eddie Brock struggles to adjust to his new life as the host of the alien symbiote Venom, which grants him super-human abilities in order to be a lethal vigilante. Brock attempts to reignite his career by interviewing serial killer Cletus Kasady, who becomes the host of the symbiote Carnage and escapes prison after a failed execution.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Tom Hardy, Woody Harrelson, Michelle Williams</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Advanture, Action, Sci-Fi</span>
+         </div>
+      </div>
+</div>
+
+<!-- Dune (2021) -->
+
+               <div id="container_of_vid-fist">
+
+                  <iframe  frameborder="0" class="dun-f" src="https://li.starweather.space/?token_movie=021f708bd11ecfd6e656ad2a9060a9" allowfullscreen=""></iframe>
+               </div>
+      <!-- title-f -->
+      <div class="xsxsfasf dun-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Dune</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">8(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">12+</span>
+                  </div>
+         </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">
+            Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.            
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Timothée Chalamet, Rebecca Ferguson, Zendaya</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Action</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Adventure, Action, Drama</span>
+         </div>
+      </div>
+</div>
+
+
+<!-- Unbearable Weight of Massive Talent (2022) -->
+
+               <div id="container_of_vid-fist">
+               
+                  <iframe  frameborder="0" class="mass-f" src="https://thermal.allohalive.com/?token_movie=72e3253da12f44bb3718f78c244638" allowfullscreen="allowfullscreen"></iframe>
+               </div>
+      <!-- title-f -->
+      <div class="xsxsfasf mass-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Massive Talent</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">7(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">16+</span>
+                  </div>
+         </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Unfulfilled and facing financial ruin, actor Nick Cage accepts a $1 million offer to attend a wealthy fan's birthday party. Things take a wildly unexpected turn when a CIA operative recruits Cage for an unusual mission. Taking on the role of a lifetime, he soon finds himself channeling his most iconic and beloved characters to save himself and his loved ones.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Nicolas Cage, Pedro Pascal, Sharon Horgan, Tiffany Haddish</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Comedy</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Crime, Comedy, Action</span>
+         </div>
+      </div>
+</div>
+
+
+<!-- The Matrix Resurrections -->
+
+               <div id="container_of_vid-fist">
+               
+                  <iframe  frameborder="0" class="matr-f" src="https://abelite.thealloha.club/?token_movie=0c7655f3f353371368c7277a4f3df8&token=e3d066952ebbe48c65dacd50b297d2" allowfullscreen="allowfullscreen"></iframe>
+               </div>
+      <!-- title-f -->
+      <div class="xsxsfasf matr-t">
+         <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+            data-delay-in="0.6">Matrix 4</h1>
+   
+            <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+            <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                  <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                     <li class="non-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </li>
+                  </ul>
+                  <span class="text-white ml-2">7.1(lmdb)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                     <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">16+</span>
+                  </div>
+         </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+         <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out if his reality is a construct, to truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more.
+         </p>
+         <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+         <div class="text-primary title starring">
+            <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Keanu Reeves, Carrie-Anne Moss, Christina Ricci</span>
+         </div>
+         <div class="text-primary title genres">
+            <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Fantasy</span>
+         </div>
+         <div class="text-primary title tag">
+            <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Fantasy</span>
+         </div>
+      </div>
+</div>
+
+<!-- Scream -->
+<div id="container_of_vid-fist">
+               <iframe src="https://li.starweather.space/?token_movie=b379fda0a2d5a07fa40b0d610f6057" frameborder="0" allowfullscreen="" class="screm-f"></iframe>
+               </div>
+     <!-- title-f -->
+     <div class="xsxsfasf screm-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Scream</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+           <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+<!-- Home Alone 1 -->
+<div id="container_of_vid-fist">
+               <iframe src="https://ability.thealloha.club/?token_movie=c7a49a26fdc34307bc980bb98fedba" frameborder="0" allowfullscreen="" class="homa-f"></iframe>
+               </div>
+   <!-- title-f -->
+   <div class="xsxsfasf homa-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Home Alone</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Doctor Strange 2 -->
+<div id="container_of_vid-fist">
+               <iframe src="https://abelite.thealloha.club/?token_movie=fb5867eb908b0f0f187a982955fd46" frameborder="0" allowfullscreen="" class="Doctor-f"></iframe>
+               </div>
+   <!-- title-f -->
+   <div class="xsxsfasf Doctor-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Doctor Strange</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+ <!-- Free Guy  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://aboulia.thealloha.club/?kp=1199100" frameborder="0" allowfullscreen="" class="Guy-f"></iframe>
+               </div>
+   <!-- title-f  -->
+   <div class="xsxsfasf Guy-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Free Guy</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+         <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Space Jam -->
+<div id="container_of_vid-fist">
+               <iframe src="https://aboulia.thealloha.club/?kp=841747" frameborder="0" allowfullscreen="" class="spa-f"></iframe>
+               </div>
+  <!-- title-f -->
+   <div class="xsxsfasf spa-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Space Jam</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+               <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+<!-- Home Alone 2  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://ability.thealloha.club/?token_movie=e57609946991187fc207b7f6695bc1" frameborder="0" allowfullscreen="" class="homa2-f"></iframe>
+               </div>
+   <!-- title-f -->
+   <div class="xsxsfasf homa2-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Home Alone 2</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+<!-- finch  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://abelite.thealloha.club/?token_movie=146d722e144dd2c5ced3bef830a01d" frameborder="0" allowfullscreen="" class="fin-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf fin-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Finch</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+
+ <!-- Avengers  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://ollo.as.alloeclub.com/?token_movie=ec7b35cea2a31ed36f60541821e043" frameborder="0" allowfullscreen="" class="avg-f"></iframe>
+               </div>
+ <!-- title-f  -->
+   <div class="xsxsfasf avg-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Avengers Endgame</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+<!-- Good Boys  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://kinchik.allohalive.com/?token_movie=7b9df15ab562cd2e6bf8c3da85a149&token=54e4f1b52d15f9f39add8c724b1631" frameborder="0" allowfullscreen="" class="Boy-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Boy-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Good Boys</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Mass (2021)  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://alloha.kinoapi.club/?token=fca37b4f00a55aad7d94d6339d0095&kp=1200704" frameborder="0" allowfullscreen="" class="mass2-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf mass2-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Mass (2021)</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Identifying  -->
+<div id="container_of_vid-fist">
+               <iframe src="https://kinchik.allohalive.com/?token_movie=7b9df15ab562cd2e6bf8c3da85a149&token=54e4f1b52d15f9f39add8c724b1631" frameborder="0" allowfullscreen="" class="Identifying-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Identifying-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Identifying Features</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+<!-- Alley -->
+<div id="container_of_vid-fist">
+               <iframe src="https://alloha.kinoapi.club/?token=fca37b4f00a55aad7d94d6339d0095&kp=8285" frameborder="0" allowfullscreen="" class="Alley-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Alley-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Alley</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+
+<!-- Parallel Mothers -->
+<div id="container_of_vid-fist">
+               <iframe src="https://etelstan.as.alloeclub.com/?token_movie=97dd8ee489dd2c91e1cf2ebb203bff" frameborder="0" allowfullscreen="" class="Mothers-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Mothers-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Parallel Mothers</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Cyrano (2021) -->
+<div id="container_of_vid-fist">
+               <iframe src="https://abelite.thealloha.club/?token_movie=3e4a47112acc6ea112d13a6effa362&token=d133ea64ea2b8f3909ca3951318315" frameborder="0" allowfullscreen="" class="Cyrano-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Cyrano-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Cyrano (2021)</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Jockey (2021) -->
+<div id="container_of_vid-fist">
+               <iframe src="https://kinchik.allohalive.com/?token_movie=7b9df15ab562cd2e6bf8c3da85a149&token=54e4f1b52d15f9f39add8c724b1631" frameborder="0" allowfullscreen="" class="Jockey-f"></iframe>
+               </div>
+<!-- title-f  -->
+   <div class="xsxsfasf Jockey-t">
+      <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+         data-delay-in="0.6">Jockey (2021)</h1>
+
+         <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+         <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+               <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+                  <li class="non-star">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                  </li>
+               </ul>
+               <span class="text-white ml-2">5.8(lmdb)</span>
+               </div>
+               <div class="d-flex align-items-center mt-2 mt-md-3">
+                  <span class="badge badge-secondary p-2" style="background-color: #6666ff; margin-left: 5px;">18+</span>
+               </div>
+      </div>
+      <div class="atention-of-f">
+                     <i class='fa fa-warning' style="color:#ffd700; margin-top:5px;"></i> <p caption='attentionf' class="lang-change">
+            if your film is not loading, refresh the page or click - </p> <a href="../faq and what to do/WTD.html" class="lang-change" caption='ahrfilmatt' style="margin-left: 3px;"> what to do?</a>
+      </div>
+      <p data-animation-in="fadeInUp" data-delay-in="1.2" class="opis mt-2">After being involuntarily discharged from the U.S. Special Forces, James Harper (Pine) decides to support his family by joining a private contracting organization alongside his best friend (Foster) and under the command of a fellow veteran (Sutherland).
+      </p>
+      <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+      <div class="text-primary title starring">
+         <b class="lang-change" caption='Star'>Starring</b><span class="text-body">Chris Pine, Gillian Jacobs, Sander Thomas</span>
+      </div>
+      <div class="text-primary title genres">
+         <b class="lang-change" caption='Genr'>Genres:</b><span class="text-body">Horror</span>
+      </div>
+      <div class="text-primary title tag">
+         <b class="lang-change" caption='tagg'>Tag:</b><span class="text-body">Action, Thriller, Horror</span>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+   </div>
+</div>
+<!-- footer -->
+<footer class="footer-section">
+   <div class="container">
+       <div class="footer-cta pt-5 pb-5">
+           <div class="row">
+               <div class="col-xl-4 col-md-4 mb-30">
+                   <div class="single-cta">
+                       <i class="fas fa-map-marker-alt"></i>
+                       <div class="cta-text">
+                           <h4>Find us</h4>
+                           <span>1010 Avenue, sw 54321, chandigarh</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xl-4 col-md-4 mb-30">
+                   <div class="single-cta">
+                       <i class="fas fa-phone"></i>
+                       <div class="cta-text">
+                           <h4>Call us</h4>
+                           <span>9876543210 0</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xl-4 col-md-4 mb-30">
+                   <div class="single-cta">
+                       <i class="far fa-envelope-open"></i>
+                       <div class="cta-text">
+                           <h4>Mail us</h4>
+                           <span>officalwoolf@gmail.com</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="footer-content pt-5 pb-5">
+           <div class="row">
+               <div class="col-xl-4 col-lg-4 mb-50">
+                   <div class="footer-widget">
+                       <div class="footer-logo">
+                           <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                       </div>
+                       <div class="footer-text">
+                           <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                           elit,Lorem ipsum dolor sit amet.</p>
+                       </div>
+                       <div class="footer-social-icon">
+                           <span>Follow us</span>
+                           <a href="#"><i class="fab fa-instagram facebook-bg"></i></a>
+                           <a href="#"><i class="fab fa-telegram-plane twitter-bg"></i></a>
+                           <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                   <div class="footer-widget">
+                       <div class="footer-widget-heading">
+                           <h3>Useful Links</h3>
+                       </div>
+                       <ul class="ul-foot">
+                           <li><a href="../index.html">Home</a></li>
+                           <li><a href="films.html">Films</a></li>
+                           <li><a href="#">Cartoons</a></li>
+                           <li><a href="#">Anime</a></li>
+                           <li><a href="#">Serials</a></li>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Price List</a></li>
+                           <li><a href="#">Programmer Portfolio</a></li>
+                           <li><a href="#">Latest News</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                   <div class="footer-widget">
+                       <div class="footer-widget-heading">
+                           <h3>Subscribe</h3>
+                       </div>
+                       <div class="footer-text mb-25">
+                           <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                       </div>
+                       <div class="subscribe-form">
+                           <form action="#">
+                               <input type="email" placeholder="Email Address" required class="em-sub-news">
+                               <button><i class="fab fa-telegram-plane"></i></button>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="copyright-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                   <div class="copyright-text">
+                       <p>Copyright &copy; 2022, All Right Reserved <a href="https://www.codepen.io/Artixx25">Artixx</a></p>
+                   </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                   <div class="footer-menu">
+                       <ul>
+                           <li><a href="../index.html">Home</a></li>
+                           <li><a href="films.html">Films</a></li>
+                           <li><a href="#">Cartoons</a></li>
+                           <li><a href="#">Anime</a></li>
+                           <li><a href="#">Serials</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</footer>
+
+<script src="js/script.js"></script>
+<!-- popper -->
+<script src="js/popper.min.js"></script>
+<!-- Slick JS -->
+<script src="js/slick.min.js"></script>
+<!-- owl carousel Js -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- Slick Animation-->
+<script src="js/slick-animation.min.js"></script>
+<!-- Custom JS-->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

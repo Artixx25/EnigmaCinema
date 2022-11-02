@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="WTD.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Enigma - what to do?</title>
+</head>
+<body>
+  <!-- loader -->
+  <div class="mask">
+	<div id="preloader">
+		<div class="center-loader">
+<svg class="gegga">
+	<defs>
+		<filter id="gegga">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="inreGegga"></feColorMatrix>
+			<feComposite in="SourceGraphic" in2="inreGegga" operator="atop"></feComposite>
+		</filter>
+	</defs>
+</svg>
+<svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+	<defs>
+		<linearGradient id="linjärGradient">
+			<stop class="stopp1" offset="0"></stop>
+			<stop class="stopp2" offset="1"></stop>
+		</linearGradient>
+		<linearGradient y2="160" x2="160" y1="40" x1="40" gradientUnits="userSpaceOnUse" id="gradient" xlink:href="#linjärGradient"></linearGradient>
+	</defs>
+	<path class="halvan" d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"></path>
+	<circle class="strecken" cx="100" cy="100" r="64"></circle>
+</svg>
+<svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+	<path class="halvan" d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"></path>
+	<circle class="strecken" cx="100" cy="100" r="64"></circle>
+</svg>
+</div>
+</div>
+</div>
+
+
+<a href="../other_html/films.html" class="back-html">
+	<span>← Back</span>
+</a>
+
+<div class="container">
+	<h2>What to do</h2>
+	<div class="accordion">
+	  <div class="accordion-item">
+		<button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">If i have 503 eror servise on video </span><span class="icon" aria-hidden="true"></span></button>
+		<div class="accordion-content">
+		  <p>First what you need to do is refresh page and try to open your video one more time. If it dont work, you need right clik on video and clik on reload frame. (<span style="text-decoration: underline; cursor: pointer; color: var(--main-color);" id="see-full">see img</span>)</p>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+		<div class="accordion-content">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+		<div class="accordion-content">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+		<div class="accordion-content">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+		<div class="accordion-content">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+ 
+  <div class="cent">
+	<div class="close-div">
+		<button id="close">
+			<span>← Back</span>
+		  </button>
+</div>
+<div class="img-div">
+  <img src="fram.jpg" alt="" class="err503" draggable="false">
+</div>
+</div>
+
+<script src="WTD.js"></script>
+</body>
+</html>
