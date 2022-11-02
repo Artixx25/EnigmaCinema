@@ -1,0 +1,2 @@
+# EnigmaCinema
+my global project
